@@ -76,8 +76,8 @@ hugo new posts/test.md
 该主题纯javascript编写,对于gh-pages或者vercel都是极友好的,是作者找不到合适的主题又不会魔改别人主题部署还一直报错不得已从头开发的~~自立自强之举~~重复造轮子行为,欢迎大家赞助一下~~
 
 <p align = "center">    
-<img src="https://gitee.com/Linsifu/pic-embed/raw/master/images/alipay.jpg" width=400 align="left">
-<img src="https://gitee.com/Linsifu/pic-embed/raw/master/images/wechatpay.jpg" width=400 align="right">
+<img src="https://gitee.com/Linsifu/pic-embed/raw/master/images/alipay.jpg" width=300 align="left">
+<img src="https://gitee.com/Linsifu/pic-embed/raw/master/images/wechatpay.jpg" width=300 align="right">
 </p>
 
 
