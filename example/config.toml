@@ -1,7 +1,9 @@
 baseURL = "http://example.com"
 theme = "sifu"
 preserveTaxonomyNames = true
+# 每页显示的文章数量
 paginate = 5 #frontpage pagination
+# 默认语言
 defaultContentLanguage = "zh-cn"
 defaultContentLanguageInSubdir = true
 hasCJKLanguage = true
@@ -10,6 +12,7 @@ hasCJKLanguage = true
         languageName = "fi fi-us"
         weight = 1
         title = "sifulin's Den"
+        # 不同语言文章目录
         contentDir = "content/en"
         [languages.en.params]
             description = "Suffering so hard that I wanna die!"
@@ -23,7 +26,6 @@ hasCJKLanguage = true
                 description = "Affordable IPLC Dedicated Line VPN Solution"
                 url = "https://ykxqn.com/#/register?code=2Rvn9pVw"
                 img = "/links/Lime.jpg"
-
             [languages.en.params.author]
                 name = "sifulin"
                 description = "Computer novice, communication novice, internet nerd, bug writer out of interest~"
@@ -32,6 +34,7 @@ hasCJKLanguage = true
         languageName = "fi fi-cn"
         weight = 2
         title = "林师傅的贼窝"
+        # 不同语言文章目录
         contentDir = "content/zh-cn"
         [languages.zh-cn.params]
             description = "每天都被折磨的想死"
@@ -45,7 +48,6 @@ hasCJKLanguage = true
                 description = "有性价比的IPLC专线机场"
                 url = "https://ykxqn.com/#/register?code=2Rvn9pVw"
                 img = "/links/Lime.jpg"
-
             [languages.zh-cn.params.author]
                 name = "林师傅"
                 description = "兴趣使然的计算机菜鸟、通信小白、网络呆子、bug写手~"
@@ -92,14 +94,18 @@ home = ["HTML", "RSS", "JSON"]
 [permalinks]
     posts = ":year/:month/:day/:slug"
 [params]
+# dark | light
 defaultThemeMode = "dark"
+# static/avatar.jpg
 avatar = "/avatar.jpg" 
+# 首页的RSS
 rss = true
+# 页脚RSS
 footerRss = true
 paginatorNums = 6
 [params.waline]
 enable = false
-walineServerURL = "https://sifulinblog-comments.vercel.app"
+walineServerURL = "https://example.com"
 walinePlaceholder = "请填写正确的昵称和邮箱，方便接收评论回复信息哦。"  #留言框占位提示文字
 walineAvatar = "mp"
 walineMeta = ["nick", "mail", "link"]
@@ -110,23 +116,23 @@ walineAvatarCDN = "https://cdn.v2ex.com/gravatar/"
 walineRequiredFields = ["nick", "mail"]
 [params.disqus]
 enable = false
-disqusShortnameUrl = "https://sifulin.disqus.com/embed.js"
+disqusShortnameUrl = "https://shortname.disqus.com/embed.js"
 ## 配置 utteranc评论,教程参考 https://utteranc.es/
 [params.utterances]
   enable = false
-  repo = "sifuLIN666/utteranceBlog" ##换成自己得
+  repo = "gitname/gitrepo" ##换成自己得
   issueTerm = "pathname"
   theme = "github-dark"    
 [params.giscus]
   enable = true
-  repo = "sifuLIN666/giscusBlog" ##换成自己得
-  repoID = "R_kgDOMAvdcA"
+  repo = "gitname/gitrepo" ##换成自己得
+  repoID = "repoID"
   mapping = "pathname"
-  category = "General"
-  categoryID = "DIC_kwDOMAvdcM4Cfngc"
+  category = "category"
+  categoryID = "categoryID"
   lang = "zh-CN"
   theme = "github-dark"  
-
+# 页脚社交链接
 [[params.social]]
 name = "bilibili"
 url = "https://space.bilibili.com/8337954"
