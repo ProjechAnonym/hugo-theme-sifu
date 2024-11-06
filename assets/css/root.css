@@ -5,7 +5,8 @@ body {
 .main-container {
   /* 4rem:header 1rem:footer-padding */
   height: calc(100dvh - 4rem - 1rem);
-  margin-top: 3rem;
+  /* 这个margin是因为他似乎不是定位在顶部,莫名其妙被占了2rem需要再补充剩下的2rem */
+  margin-top: 2rem;
   color: var(--text-color);
   position: relative;
 }
