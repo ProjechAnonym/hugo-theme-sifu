@@ -71,6 +71,53 @@ hugo new posts/test.md
 | --------------------------------- | ----------------------------------- | -------- | ---------- | --------------------------------------- | ----------------------------- | ------------ | ------------ |
 | 文章的路由参数,使用英文会方便检索 | 文章介绍,尽量不要太长,100字以内为好 | 文章标签 | 文章分类   | 系列专栏,比如《母猪产后护理》上中下三集 | 是否开启数学公式,支持行内公式 | 是否显示目录 | 是否开启评论 |
 
+## 特性
+
+### 代码高亮
+
+* 支持自定义代码表格样式
+
+```
+ProjectName:
+└─themes
+    └─sifu
+        └─static
+           └─code.css
+```
+
+* 代码高亮使用[highlight.js]([highlight.js](https://highlightjs.org/)),支持更换不同主题
+
+```
+ProjectName:
+└─themes
+    └─sifu
+        └─layouts
+           └─partials
+              └─highlightCode.html
+```
+
+```html
+<!-- 修改第一条link的href -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dark.min.css"
+/>
+<link rel="stylesheet" href="/code.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
+<script>
+  hljs.highlightAll();
+  hljs.initLineNumbersOnLoad();
+</script>
+```
+
+### 短代码
+
+
+
+
 ## 结语
 
 该主题纯javascript编写,对于gh-pages或者vercel都是极友好的,是作者找不到合适的主题又不会魔改别人主题部署还一直报错不得已从头开发的~~自立自强之举~~重复造轮子行为,欢迎大家赞助一下~~
